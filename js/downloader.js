@@ -1,12 +1,18 @@
 var windowsLocation = "https://github.com/garthylou/Libreosteo/releases/download/v0.3.0/setup.exe";
 var linuxLocation = "https://github.com/garthylou/Libreosteo/archive/v0.3.0.tar.gz";
+var macosLocation = "https://github.com/garthylou/Libreosteo/archive/Libreosteo.zip";
 
 	$('#downloader').on("click", function() {
 		var pgwBrowser = $.pgwBrowser();
 		var modal = $("#download-modal");
 		if (pgwBrowser.os.group == "Mac OS" ) {
-			modal.find(".modal-body p").text("Nous travaillons actuellement à porter Libreosteo sur Mac OS X. Aidez-nous à valider la version en test, contactez le développeur via Twitter, Facebook ou Github.");
-			modal.find('.modal-footer .btn-primary').hide();
+			modal.find(".modal-body p").text("Nous travaillons actuellement à porter Libreosteo sur Mac OS X. Aidez-nous à valider la version en test, et contactez le développeur via Twitter, Facebook ou Github pour lui faire part de votre utilisation. Merci.");
+			//modal.find('.modal-footer .btn-primary').hide();
+
+			$("#btn-download").click(function() {
+                                window.location = macosLocation ;
+                        });
+
 			$("#download-modal").modal('toggle');
 		} else if (pgwBrowser.os.group == "Linux") {
 			
