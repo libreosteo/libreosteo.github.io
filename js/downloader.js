@@ -1,6 +1,6 @@
 var windowsLocation = "https://github.com/garthylou/Libreosteo/releases/download/v0.3.0/setup.exe";
 var linuxLocation = "https://github.com/garthylou/Libreosteo/archive/v0.3.0.tar.gz";
-var macosLocation = "https://github.com/garthylou/Libreosteo/archive/Libreosteo.zip";
+var macosLocation = "https://github.com/garthylou/Libreosteo/releases/download/v0.3.0/Libreosteo.zip";
 
 	$('#downloader').on("click", function() {
 		var pgwBrowser = $.pgwBrowser();
