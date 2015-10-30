@@ -34,6 +34,11 @@ var macosLocation = "https://github.com/libreosteo/Libreosteo/releases/download/
 				});
 
 				$("#download-modal").modal("toggle");
+			} else if (pgwBrowser.browser.group == "Spartan"){
+				modal.find('.modal-body p').text("Microsoft Edge n'est pas supporté, vous devez utiliser un navigateur comme Mozilla Firefox ou Google Chrome pour utiliser pleinement les fonctionnalités de Libreosteo");
+				$("#btn-download").click(function() {
+					window.location=windowsLocation;
+				});
 			} else {
 				window.location=windowsLocation;
 			}		
