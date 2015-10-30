@@ -1,6 +1,6 @@
-var windowsLocation = "https://github.com/garthylou/Libreosteo/releases/download/v0.3.0/setup.exe";
-var linuxLocation = "https://github.com/garthylou/Libreosteo/archive/v0.3.0.tar.gz";
-var macosLocation = "https://github.com/garthylou/Libreosteo/releases/download/v0.3.0/Libreosteo.zip";
+var windowsLocation = "https://github.com/libreosteo/Libreosteo/releases/download/v0.4.2/setup.exe";
+var linuxLocation = "https://github.com/libreosteo/Libreosteo/archive/v0.4.2.tar.gz";
+var macosLocation = "https://github.com/libreosteo/Libreosteo/releases/download/v0.4.2/Libreosteo.pkg.zip";
 
 	$('#downloader').on("click", function() {
 		var pgwBrowser = $.pgwBrowser();
