@@ -39,6 +39,8 @@ var macosLocation = "https://github.com/libreosteo/Libreosteo/releases/download/
 				$("#btn-download").click(function() {
 					window.location=windowsLocation;
 				});
+
+				$("#download-modal").modal('toggle');
 			} else {
 				window.location=windowsLocation;
 			}		
