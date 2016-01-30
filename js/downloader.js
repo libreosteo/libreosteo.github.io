@@ -1,4 +1,4 @@
-var windowsLocation = "https://github.com/libreosteo/Libreosteo/releases/download/v0.4.2/setup.exe";
+var windowsLocation = "https://github.com/libreosteo/Libreosteo/releases/download/v0.4.2/Libreosteo-win32-0.4.2.zip";
 var linuxLocation = "https://github.com/libreosteo/Libreosteo/archive/v0.4.2.tar.gz";
 var macosLocation = "https://github.com/libreosteo/Libreosteo/releases/download/v0.4.2/Libreosteo.pkg.zip";
 
