@@ -173,7 +173,23 @@
                             </div>
                             <div id="collapse8" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    <p class="faq-text">Malheureusement, le mot de passe est chiffré et vous ne pourrez pas le récupérer. Cela va donc être difficile de récupérer le mot de passe Administrateur. En revanche, depuis l'interface de gestion du cabinet, vous pouvez changer le mot de passe d'un des collaborateurs du cabinet. Pratique s'il l'a perdu, ou bien dans le cas où il doit quitter votre cabinet.</p>
+                                    <p class="faq-text">Malheureusement, le mot de passe est chiffré et vous ne pourrez pas le récupérer. Cela va donc être difficile de récupérer le mot de passe Administrateur. En revanche, depuis l'interface de gestion du cabinet, vous pouvez changer le mot de passe d'un des collaborateurs du cabinet. Pratique s'il l'a perdu, ou bien dans le cas où il doit quitter votre cabinet.
+                                        <br/> Vous pouvez changer le mot de passe administrateur de Libreosteo en effectuant les étapes suivantes : 
+                                        <ul><li>Sous Windows :</li>
+                                            <li><ul>
+                                                <li>Se positionner à l'aide du navigateur de fichier dans le répertoire d'installation de Libreosteo (ex : C:\Program Files(x86)\Libreosteo)
+                                                </li>
+                                                <li>Menu <b>Fichier</b> > <b>Ouvrir Windows PowerShell</b>  > <b>Ouvrir Windows PowerShell en tant qu'administrateur</b></li>
+                                                <li>taper : <pre>./manager.exe changepassword nom_utilisateur</pre> où <pre>nom_utilisateur</pre> est votre nom d'utilisateur sous Libreosteo</li> 
+                                            </ul>
+                                            <li>Sous Mac OS X:</li>
+                                            <li><ul>
+                                                <li>Ouvrir un <b>Terminal</b></li>
+                                                <li>Taper : <pre>cd /Applications/Libreosteo.app/Contents/MacOS</pre></li>
+                                                <li>puis taper : <pre>./manage changepassword nom_utilisateur</pre> où <pre>nom_utilisateur</pre> est votre nom d'utilisateur sous Libreosteo</li>
+                                            </li>
+                                        </ul>
+                                    </p>
                                 </div>
                             </div>
                         </div>
