@@ -1,6 +1,6 @@
-var windowsLocation = "https://github.com/libreosteo/Libreosteo/releases/download/0.5.4/Libreosteo-0.5.4-win32.zip";
-var linuxLocation = "https://github.com/libreosteo/Libreosteo/archive/0.5.4.tar.gz";
-var macosLocation = "https://github.com/libreosteo/Libreosteo/releases/download/0.5.4/Libreosteo.pkg.zip";
+var windowsLocation = "https://github.com/libreosteo/Libreosteo/releases/download/0.5.5/Libreosteo-0.5.5-win32.zip";
+var linuxLocation = "https://github.com/libreosteo/Libreosteo/archive/0.5.5.tar.gz";
+var macosLocation = "https://github.com/libreosteo/Libreosteo/releases/download/0.5.5/Libreosteo.mpkg.zip";
 
 var windowsLocationBeta = "https://github.com/libreosteo/Libreosteo/releases/download/0.4.9.2/Libreosteo-beta-v0.4.9.2-win32.zip";
 var linuxLocationBeta = "https://github.com/libreosteo/Libreosteo/archive/0.4.9.2.tar.gz";
@@ -11,14 +11,7 @@ var macosLocationBeta = "https://github.com/libreosteo/Libreosteo/releases/downl
 		var pgwBrowser = $.pgwBrowser();
 		var modal = $("#download-modal");
 		if (pgwBrowser.os.group == "Mac OS" ) {
-			modal.find(".modal-body p").text("Nous travaillons actuellement à porter Libreosteo sur Mac OS X. Aidez-nous à valider la version en test, et contactez le développeur via Twitter, Facebook ou Github pour lui faire part de votre utilisation. Merci.");
-			//modal.find('.modal-footer .btn-primary').hide();
-
-			$("#btn-download").click(function() {
-                                window.location = macosLocation ;
-                        });
-
-			$("#download-modal").modal('toggle');
+                window.location = macosLocation ;
 		} else if (pgwBrowser.os.group == "Linux") {
 			
 			modal.find('.modal-body p').text("Le téléchargement pour Linux est disponible sous la forme de l'ensemble des sources. Suivez les instructions de README pour installer votre version sur votre machine.");
