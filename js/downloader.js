@@ -1,6 +1,6 @@
-var windowsLocation = "https://github.com/libreosteo/Libreosteo/releases/download/0.5.5/Libreosteo-0.5.5-win32.zip";
-var linuxLocation = "https://github.com/libreosteo/Libreosteo/archive/0.5.5.tar.gz";
-var macosLocation = "https://github.com/libreosteo/Libreosteo/releases/download/0.5.5/Libreosteo.mpkg.zip";
+var windowsLocation = "https://github.com/libreosteo/Libreosteo/releases/download/0.5.7/Libreosteo-0.5.7-win32.zip";
+var linuxLocation = "https://github.com/libreosteo/Libreosteo/archive/0.5.7.tar.gz";
+var macosLocation = "https://github.com/libreosteo/Libreosteo/releases/download/0.5.7/Libreosteo.pkg.zip";
 
 var windowsLocationBeta = "https://github.com/libreosteo/Libreosteo/releases/download/0.4.9.2/Libreosteo-beta-v0.4.9.2-win32.zip";
 var linuxLocationBeta = "https://github.com/libreosteo/Libreosteo/archive/0.4.9.2.tar.gz";
