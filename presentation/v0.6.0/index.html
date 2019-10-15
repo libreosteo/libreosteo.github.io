@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Libreosteo v0.6.0</title>
+
+    <link href="https://www.liriansu.com/static/css/reveal/reveal.css" rel="stylesheet">
+    <link href="https://www.liriansu.com/static/css/reveal/themes/black.css" rel="stylesheet">
+    <!-- Theme used for syntax highlighting of code -->
+    <link href="https://www.liriansu.com/static/css/reveal/zenburn.css" rel="stylesheet">
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'https://www.liriansu.com/static/css/reveal/print-pdf.css' : 'https://www.liriansu.com/static/css/reveal/print-paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown>
+        # Libreosteo V0.6.0
+
+        Présentation de la nouvelle version
+
+        </section>
+        <section>
+          <section data-markdown>
+          ## Les nouveautés
+
+           * Réorganisation de la page d'accueil (pour plus de flexibilité à l'avenir)
+           * Supporte l'ajout de documents (et notes) sur un dossier patient
+           * Permet à présent de désactiver ou activer certains mode de paiement (le paiement CB est ajouté)
+           * L'annulation de facture est possible
+           * Une synthèse de toute la facturation est disponible
+           * Permet de régulariser les impayés
+
+          </section>
+          <section data-markdown>
+          ### Réorganisation de la page d'accueil
+
+           Depuis le paramétrage thérapeute, il est possible de désactiver certains éléments de la page d'accueil.
+
+           Rien d'autre ne change pour le moment, c'est simple, mais si ça vous ennuie vous désactivez !
+
+          </section>
+          <section data-markdown>
+          ### Supporte l'ajout de documents sur un dossier patient
+
+           A présent, compte-rendu, photo de radio prise avec téléphone/tablette, ou bien toute autre documents à ajouter sont possibles.
+
+           Associez des notes à ce document pour comprendre plus facilement.
+
+          </section>
+          <section data-markdown>
+          ### Activation/Désactivation de moyens de paiement
+
+           Vous pouvez depuis le paramètrage Cabinet, définir les moyens de paiement disponibles :
+
+            * Chèque
+            * Espèce
+            * Carte bleue
+
+          </section>
+          <section data-markdown>
+          ### L'annulation de facture
+
+            En accord avec les règles comptables, une facture ne peut être supprimée.
+
+            En revanche, on peut annuler une facture en crééant un avoir qui annule l'opération précédente.
+
+            C'est chose faite !
+
+          </section>
+          <section data-markdown>
+          ### Synthèse facturation
+
+            La synthèse facture vous permet d'exporter la liste des factures par thérapeute qui travaillent au cabinet (ou tout le cabinet)
+
+            Tout dépend de votre mode de fonctionnement au sein d'un cabinet multi thérapeute. Cet export peut être utile pour un logiciel comptable par exemple.
+
+
+          </section>
+          <section data-markdown>
+          ### Régularisation des impayés
+
+            Il était dommage dans la version 0.5.X qu'une consultation non payée ne puisse être régularisée.
+
+            Le logiciel permet de le faire en mettant à jour la facture (ajout d'information du règlement)
+
+            Le paiement ne peut être fait qu'en une seule fois pour le moment.
+
+          </section>
+        </section>
+        <section data-markdown>
+        ## Le nouveau socle technique
+
+         * Des tests automatisés fonctionnels ont été mis en place avec intégration en continu sur l'application
+         * Socle Django mis à jour pour corriger des failles de sécurité (Libreosteo n'en était pas affecté)
+         * Passage à python 3 (fin de support de Python2)
+         * Fin de l'utilisation de bower au profit de yarn
+
+        </section>
+        <section>
+          <section data-markdown>
+          ## Les changements
+
+           * La sauvegarde de la base patient doit à présent se faire UNIQUEMENT avec l'outil d'archivage interne
+
+          </section>
+          <section data-markdown>
+          ### Pourquoi ?
+
+           * la base doit être sauvegardée
+           * tous les documents associés aux dossiers patients aussi !!
+
+          La sauvegarde seule de db.sqlite3 n'est plus suffisante.
+
+          </section>
+          <section data-markdown>
+          ### Comment faire en cas de crash complet ?
+
+           * Sauvegarder votre fichier db.sqlite3
+           * ET Sauvegarder le dossier media
+
+           Puis les restaurer dans la nouvelle installation. Les procédures vont être mises à jour.
+
+          </section>
+        </section>
+        <section data-markdown>
+        ## Et pour la suite ?
+        La version 0.6.1
+
+         * devrait proposer une nouvelle vue de la consultation
+         * permette de modifier une date de consultation (en respect de la facturation !)
+         * gérer les médecins de la base logicielle
+         * et d'autres choses sans doute encore !
+
+        </section>
+        <section data-markdown>
+        ## Source code
+
+        Hosted on [GitHub](https://github.com/Libreosteo/libreosteo)
+
+        </section>
+        <section>
+          <section data-markdown>
+          ## Disponible
+
+           * Microsoft Windows 10
+           * MacOS X (uniquement 64bits)
+           * Linux (image Docker à venir)
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://www.liriansu.com/static/js/reveal.head.min.js"></script>
+    <script src="https://www.liriansu.com/static/js/reveal.js"></script>
+
+    <script>
+      Reveal.initialize({
+        history: true,
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          {src: 'https://www.liriansu.com/static/js/reveal-marked.js'},
+          {src: 'https://www.liriansu.com/static/js/reveal-markdown.js'},
+          {src: 'https://www.liriansu.com/static/js/reveal-notes.js', async: true},
+          {
+            src: 'https://www.liriansu.com/static/js/reveal-highlight.js', async: true, callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          }
+        ]
+      });
+    </script>
+  </body>
+</html>
