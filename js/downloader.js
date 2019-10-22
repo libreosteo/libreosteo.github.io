@@ -13,16 +13,16 @@ var macosLocationBeta = "https://github.com/libreosteo/Libreosteo/releases/downl
 		if (pgwBrowser.os.group == "Mac OS" ) {
                 window.location = macosLocation ;
 		} else if (pgwBrowser.os.group == "Linux") {
-			
-			modal.find('.modal-body p').text("Vous pouvez utiliser l'image Docker pour une installation sous linux : <pre>docker pull littlejo/libreosteo</pre>\nL'ensemble des sources est disponible, suivez les instructions de README pour installer votre version sur votre machine.");
+
+			modal.find('.modal-body p').html("Vous pouvez utiliser l'image Docker pour une installation sous linux : <pre>docker pull littlejo/libreosteo</pre>\nL'ensemble des sources est disponible, suivez les instructions de README pour installer votre version sur votre machine.");
 			//modal.find('.modal-footer .btn-primary').hide();
-			
+
 			$("#btn-download").click(function() {
 				window.location = linuxLocation	;
 			});
 
 			$("#download-modal").modal('toggle');
-			
+
 
 		} else if (pgwBrowser.os.group == "Windows") {
 			if (pgwBrowser.browser.group == "Explorer"){
@@ -41,7 +41,7 @@ var macosLocationBeta = "https://github.com/libreosteo/Libreosteo/releases/downl
 				$("#download-modal").modal('toggle');
 			} else {
 				window.location=windowsLocation;
-			}		
+			}
 		}
 	});
 
@@ -59,16 +59,16 @@ var macosLocationBeta = "https://github.com/libreosteo/Libreosteo/releases/downl
 
 			$("#download-modal").modal('toggle');
 		} else if (pgwBrowser.os.group == "Linux") {
-			
+
 			modal.find('.modal-body p').text("Le téléchargement pour Linux est disponible sous la forme de l'ensemble des sources. Suivez les instructions de README pour installer votre version sur votre machine.");
 			//modal.find('.modal-footer .btn-primary').hide();
-			
+
 			$("#btn-download").click(function() {
 				window.location = linuxLocationBeta	;
 			});
 
 			$("#download-modal").modal('toggle');
-			
+
 
 		} else if (pgwBrowser.os.group == "Windows") {
 			if (pgwBrowser.browser.group == "Explorer"){
@@ -87,6 +87,6 @@ var macosLocationBeta = "https://github.com/libreosteo/Libreosteo/releases/downl
 				$("#download-modal").modal('toggle');
 			} else {
 				window.location=windowsLocationBeta;
-			}		
+			}
 		}
 	});
