@@ -15,7 +15,7 @@ var macosLocationBeta = "https://github.com/libreosteo/Libreosteo/releases/downl
                 window.location = macosLocation ;
 		} else if (pgwBrowser.os.group == "Linux") {
 
-			modal.find('.modal-body p').html("Vous pouvez utiliser l'image Docker pour une installation sous linux : <pre>docker pull littlejo/libreosteo</pre>\nL'ensemble des sources est disponible, suivez les instructions de README pour installer votre version sur votre machine.");
+			modal.find('.modal-body p').html("Vous pouvez utiliser l'image Docker pour une installation sous linux : <pre>curl -Ls https://github.com/libreosteo/LibreOsteo/blob/master/Docker/deploy/sqlite/dist/auto_install?raw=true --output auto_install</pre>Puis taper :<pre>chmox +x auto_install && sudo ./auto_install</pre>");
 			//modal.find('.modal-footer .btn-primary').hide();
 
 			$("#btn-download").click(function() {
