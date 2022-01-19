@@ -1,4 +1,4 @@
-var windowsAMD64Location = "https://github.com/libreosteo/Libreosteo/releases/download/0.6.1/Libreosteo-0.6.2-win64.zip";
+var windowsAMD64Location = "https://github.com/libreosteo/Libreosteo/releases/download/0.6.2/Libreosteo-0.6.2-win64.zip";
 var windowsLocation = windowsAMD64Location;
 var linuxLocation = "https://github.com/libreosteo/Libreosteo/archive/0.6.2.tar.gz";
 var macosLocation = "https://github.com/libreosteo/Libreosteo/releases/download/0.6.2/Libreosteo.mpkg.zip";
