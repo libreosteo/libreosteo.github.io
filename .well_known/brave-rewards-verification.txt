@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: libreosteo.org
+Token: 6792fecae88825fdfa506b4382208432cf2e863bac0545fd732113f0940b18ad
