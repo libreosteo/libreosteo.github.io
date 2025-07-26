@@ -1,4 +1,4 @@
-var version_number = "0.6.7"
+var version_number = "0.6.8"
 var windowsAMD64Location = "https://github.com/libreosteo/Libreosteo/releases/download/" + version_number+ "/Libreosteo-"+ version_number+ "-win64.zip";
 var windowsLocation = windowsAMD64Location;
 var linuxLocation = "https://github.com/libreosteo/Libreosteo/archive/" + version_number + ".tar.gz";
